@@ -1,15 +1,38 @@
-%<*manuscript|acmsmall|acmlarge|acmtog|sigconf|authordraft|sigplan|sigchi|sigchi-a|acmsmall-conf>
+%%
+%% This is file `sample-manuscript.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `manuscript')
 %% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-manuscript.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
 %% The first command in your LaTeX source must be the \documentclass command.
-%<manuscript>\documentclass[manuscript,screen]{acmart}
-%<acmsmall|acmsmall-conf>\documentclass[acmsmall]{acmart}
-%<acmlarge>\documentclass[acmlarge]{acmart}
-%<acmtog>\documentclass[acmtog]{acmart}
-%<sigconf>\documentclass[sigconf]{acmart}
-%<authordraft>\documentclass[sigconf,authordraft]{acmart}
-%<sigplan>\documentclass[sigplan,screen]{acmart}
-%<sigchi>\documentclass[sigchi]{acmart}
-%<sigchi-a>\documentclass[sigchi-a]{acmart}
+%%%% Small single column format, used for CIE, CSUR, DTRAP, JACM, JDIQ, JEA, JERIC, JETC, PACMCGIT, TAAS, TACCESS, TACO, TALG, TALLIP (formerly TALIP), TCPS, TDSCI, TEAC, TECS, TELO, THRI, TIIS, TIOT, TISSEC, TIST, TKDD, TMIS, TOCE, TOCHI, TOCL, TOCS, TOCT, TODAES, TODS, TOIS, TOIT, TOMACS, TOMM (formerly TOMCCAP), TOMPECS, TOMS, TOPC, TOPLAS, TOPS, TOS, TOSEM, TOSN, TQC, TRETS, TSAS, TSC, TSLP, TWEB.
+% \documentclass[acmsmall]{acmart}
+
+%%%% Large single column format, used for IMWUT, JOCCH, PACMPL, POMACS, TAP, PACMHCI
+% \documentclass[acmlarge,screen]{acmart}
+
+%%%% Large double column format, used for TOG
+% \documentclass[acmtog, authorversion]{acmart}
+
+%%%% Generic manuscript mode
+\documentclass[manuscript,screen,review]{acmart}
 
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
@@ -22,44 +45,26 @@
 %% values in them; it is your responsibility as an author to replace
 %% the commands and values with those provided to you when you
 %% complete the rights form.
-%
 \setcopyright{acmcopyright}
 \copyrightyear{2018}
 \acmYear{2018}
 \acmDOI{10.1145/1122445.1122456}
 
-%</manuscript|acmsmall|acmlarge|acmtog|sigconf|authordraft|sigplan|sigchi|sigchi-a|acmsmall-conf>
-%<*manuscript|sigconf|authordraft|sigplan|sigchi|sigchi-a|acmsmall-conf>
 %% These commands are for a PROCEEDINGS abstract or paper.
 \acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural
-  Gaze Detection}{June 03--05, 2018}{Woodstock, NY} 
+  Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
 \acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
-  June 03--05, 2018, Woodstock, NY} 
+  June 03--05, 2018, Woodstock, NY}
 \acmPrice{15.00}
 \acmISBN{978-1-4503-XXXX-X/18/06}
-%</manuscript|sigconf|authordraft|sigplan|sigchi|sigchi-a|acmsmall-conf>
-
-%<*acmsmall|acmlarge|acmtog>
-%%
-%% These commands are for a JOURNAL article.
-%<acmsmall>\acmJournal{JACM}
-%<acmlarge>\acmJournal{POMACS}
-%<acmtog>\acmJournal{TOG}
-\acmVolume{37}
-\acmNumber{4}
-\acmArticle{111}
-\acmMonth{8}
-%</acmsmall|acmlarge|acmtog>
-%<*manuscript|acmsmall|acmlarge|acmtog|sigconf|authordraft|sigplan|sigchi|sigchi-a|acmsmall-conf>
 
 
 %%
-%% Submission ID. 
+%% Submission ID.
 %% Use this when submitting an article to a sponsored event. You'll
 %% receive a unique submission ID from the organizers
 %% of the event, and this ID should be used as the parameter to this command.
 %%\acmSubmissionID{123-A56-BU3}
-
 
 %%
 %% The majority of ACM publications use numbered citations and
@@ -69,10 +74,9 @@
 %% If you are preparing content for an event
 %% sponsored by ACM SIGGRAPH, you must use the "author year" style of
 %% citations and references.
-%<!acmtog>%% Uncommenting 
-%<!acmtog>%% the next command will enable that style.
-%<!acmtog>%%\citestyle{acmauthoryear}
-%<acmtog>\citestyle{acmauthoryear}
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
 
 %%
 %% end of the preamble, start of the body of the document source.
@@ -87,7 +91,7 @@
 %% The "author" command and its associated commands are used to define
 %% the authors and their affiliations.
 %% Of note is the shared affiliation of the first two authors, and the
-%% "authornote" and "authornotemark" commands 
+%% "authornote" and "authornotemark" commands
 %% used to denote shared contribution to the research.
 \author{Ben Trovato}
 \authornote{Both authors contributed equally to this research.}
@@ -126,7 +130,7 @@
  \city{Doimukh}
  \state{Arunachal Pradesh}
  \country{India}}
- 
+
 \author{Huifen Chan}
 \affiliation{%
   \institution{Tsinghua University}
@@ -154,15 +158,15 @@
 
 %%
 %% By default, the full list of authors will be used in the page
-%% headers. Often, this list is too long, and will overlap 
+%% headers. Often, this list is too long, and will overlap
 %% other information printed in the page headers. This command allows
-%% the author to define a more concise list 
+%% the author to define a more concise list
 %% of authors' names for this purpose.
 \renewcommand{\shortauthors}{Trovato and Tobin, et al.}
 
 %%
 %% The abstract is a short summary of the work to be presented in the
-%% article. 
+%% article.
 \begin{abstract}
   A clear and well-documented \LaTeX\ document is presented as an
   article formatted for publication by ACM in a conference proceedings
@@ -211,20 +215,6 @@
 %% the work being presented. Separate the keywords with commas.
 \keywords{datasets, neural networks, gaze detection, text tagging}
 
-%</manuscript|acmsmall|acmlarge|acmtog|sigconf|authordraft|sigplan|sigchi|sigchi-a|acmsmall-conf>
-%<*sigconf|authordraft|sigplan|acmsmall-conf>
-%% A "teaser" image appears between the author and affiliation
-%% information and the body of the document, and typically spans the
-%% page.
-\begin{teaserfigure}
-  \includegraphics[width=\textwidth]{sampleteaser}
-  \caption{Seattle Mariners at Spring Training, 2010.}
-  \Description{Enjoying the baseball game from the third-base
-  seats. Ichiro Suzuki preparing to bat.} 
-  \label{fig:teaser}
-\end{teaserfigure}
-%</sigconf|authordraft|sigplan|acmsmall-conf>
-%<*manuscript|acmsmall|acmlarge|acmtog|sigconf|authordraft|sigplan|sigchi|sigchi-a|acmsmall-conf>
 
 %%
 %% This command processes the author and affiliation and title
@@ -310,17 +300,8 @@ Frequently-used parameters, or combinations of parameters, include:
 This document uses the following string as the first command in the
 source file:
 \begin{verbatim}
-%<manuscript>\documentclass[manuscript,screen]{acmart}
-%<acmsmall|acmsmall-conf>\documentclass[acmsmall]{acmart}
-%<acmlarge>\documentclass[acmlarge]{acmart}
-%<acmtog>\documentclass[acmtog]{acmart}
-%<sigconf>\documentclass[sigconf]{acmart}
-%<authordraft>\documentclass[sigconf,authordraft]{acmart}
-%<sigplan>\documentclass[sigplan,screen]{acmart}
-%<sigchi>\documentclass[sigchi]{acmart}
-%<sigchi-a>\documentclass[sigchi-a]{acmart}
+\documentclass[manuscript,screen]{acmart}
 \end{verbatim}
-
 
 \section{Modifications}
 
@@ -472,8 +453,7 @@ Table~\ref{tab:freq} is included in the input file; compare the
 placement of the table here with the table in the printed output of
 this document.
 
-%<!sigchi-a>\begin{table}
-%<sigchi-a>\begin{margintable}
+\begin{table}
   \caption{Frequency of Special Characters}
   \label{tab:freq}
   \begin{tabular}{ccl}
@@ -486,8 +466,7 @@ this document.
     $\Psi^2_1$ & 1 in 40,000& Unexplained usage\\
   \bottomrule
 \end{tabular}
-%<!sigchi-a>\end{table}
-%<sigchi-a>\end{margintable}
+\end{table}
 
 To set a wider table, which takes up the whole width of the page's
 live area, use the environment \textbf{table*} to enclose the table's
@@ -563,16 +542,14 @@ The ``\verb|figure|'' environment should be used for figures. One or
 more images can be placed within a figure. If your figure contains
 third-party material, you must clearly identify it as such, as shown
 in the example below.
-%<!sigchi-a>\begin{figure}[h]
-%<sigchi-a>\begin{marginfigure}
+\begin{figure}[h]
   \centering
   \includegraphics[width=\linewidth]{sample-franklin}
   \caption{1907 Franklin Model D roadster. Photograph by Harris \&
     Ewing, Inc. [Public domain], via Wikimedia
     Commons. (\url{https://goo.gl/VLCRBB}).}
   \Description{The 1907 Franklin Model D roadster.}
-%<!sigchi-a>\end{figure}
-%<sigchi-a>\end{marginfigure}
+\end{figure}
 
 Your figures should contain a caption which describes the figure to
 the reader. Figure captions go below the figure. Your figures should
@@ -617,7 +594,7 @@ suffix, of the \BibTeX\ file.
 Citations and references are numbered by default. A small number of
 ACM publications have citations and references formatted in the
 ``author year'' style; for these exceptions, please include this
-command in the {\bfseries preamble} (before the command
+command in the {\bfseries preamble} (before
 ``\verb|\begin{document}|'') of your \LaTeX\ source:
 \begin{verbatim}
   \citestyle{acmauthoryear}
@@ -637,9 +614,8 @@ command in the {\bfseries preamble} (before the command
   symposium, workshop for example) (paginated proceedings article)
   \cite{Andler79}, a proceedings article with all possible elements
   \cite{Smith10}, an example of an enumerated proceedings article
-  \cite{VanGundy07}, an informally published work \cite{Harel78},
-  a couple of preprints \cite{Bornmann2019, AnzarootPBM14}, 
-  a doctoral dissertation \cite{Clarkson85}, a master's thesis:
+  \cite{VanGundy07}, an informally published work \cite{Harel78}, a
+  doctoral dissertation \cite{Clarkson85}, a master's thesis:
   \cite{anisi03}, an online document / world wide web resource
   \cite{Thornburg01, Ablamowicz07, Poker06}, a video game (Case 1)
   \cite{Obama08} and (Case 2) \cite{Novak03} and \cite{Lee05} and
@@ -716,7 +692,7 @@ To Robert, for the bagels and explaining CMYK and color spaces.
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{sample-base}
 
-%% 
+%%
 %% If your work has an appendix, this is the place to put it.
 \appendix
 
@@ -751,4 +727,6 @@ rhoncus. Maecenas eu arcu ac neque placerat aliquam. Nunc pulvinar
 massa et mattis lacinia.
 
 \end{document}
-%</manuscript|acmsmall|acmlarge|acmtog|sigconf|authordraft|sigplan|sigchi|sigchi-a|acmsmall-conf>
+\endinput
+%%
+%% End of file `sample-manuscript.tex'.
